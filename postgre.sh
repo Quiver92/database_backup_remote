@@ -10,6 +10,6 @@ for DB in $DB_LIST; do
 ((i++))
 	echo $i
 #	echo $list
-	ssh root@$IP "pg_dump -U koksztys -C --column-inserts $DB " > $DB.out
+	ssh root@$IP "pg_dump -U user -C --column-inserts $DB " > $DB.out
 done
 
